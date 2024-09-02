@@ -1,17 +1,17 @@
-
+package core;
 //Basic Singleton (Not thread safe)
-//class Car
+//class core.Car
 //{
-//    private static Car instance;
-//    private Car(){
+//    private static core.Car instance;
+//    private core.Car(){
 //
 //    }
 //
-//    public static Car getInstance()
+//    public static core.Car getInstance()
 //    {
 //        if(instance == null)
 //        {
-//            instance = new Car();
+//            instance = new core.Car();
 //        }
 //        return  instance;
 //
@@ -20,17 +20,17 @@
 //}
 
 //Way 2; (Early initialization , client cant pass arguments) | (Easy implementation)
-//class Car
+//class core.Car
 //{
-//    private static Car instance;
+//    private static core.Car instance;
 //    static{
-//        instance = new Car();
+//        instance = new core.Car();
 //    }
-//    private Car(){
+//    private core.Car(){
 //
 //    }
 //
-//    public static Car getInstance()
+//    public static core.Car getInstance()
 //    {
 //        return  instance;
 //    }
@@ -39,18 +39,18 @@
 
 ////Way-3 (Unnecessary synchronization locking overhead , low perf) |
 // (Client can pass args, lazy initialization)
-//class Car
+//class core.Car
 //{
-//    private static Car instance;
-//    private Car(){
+//    private static core.Car instance;
+//    private core.Car(){
 //
 //    }
 //
-//    public synchronized static Car getInstance()
+//    public synchronized static core.Car getInstance()
 //    {
 //        if(instance == null)
 //        {
-//            instance = new Car();
+//            instance = new core.Car();
 //        }
 //        return  instance;
 //    }
